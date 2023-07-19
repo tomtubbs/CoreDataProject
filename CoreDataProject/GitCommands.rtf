@@ -1,0 +1,118 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red108\green121\blue134;\red31\green31\blue36;\red255\green255\blue255;
+\red252\green106\blue93;\red252\green95\blue163;\red161\green103\blue230;\red161\green103\blue230;\red84\green130\blue255;
+\red208\green168\blue255;\red103\green183\blue164;}
+{\*\expandedcolortbl;;\csgenericrgb\c42394\c47462\c52518;\csgenericrgb\c12054\c12284\c14131;\csgenericrgb\c100000\c100000\c100000\c85000;
+\csgenericrgb\c98912\c41558\c36568;\csgenericrgb\c98839\c37355\c63833;\csgenericrgb\c63232\c40219\c90115;\csgenericrgb\c63137\c40392\c90196;\csgenericrgb\c33019\c51127\c99859;
+\csgenericrgb\c81681\c65692\c99927;\csgenericrgb\c40538\c71705\c64209;}
+\paperw12240\paperh15840\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab692
+\pard\tx692\pardeftab692\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 //\cf4 \
+\cf2 //  githubcommands.swift\cf4 \
+\cf2 //  Specialist\cf4 \
+\cf2 //\cf4 \
+\cf2 //  Created by Tom on 01/06/2023.\cf4 \
+\cf2 //\cf4 \
+\
+Git Primer from {\field{\*\fldinst{HYPERLINK "https://www.hackingwithswift.com/plus/ultimate-portfolio-app/storing-your-code-somewhere-safe"}}{\fldrslt https://www.hackingwithswift.com/plus/ultimate-portfolio-app/storing-your-code-somewhere-safe}}\
+ \
+On GitHub, click the + button in the top right corner and select New Repository. \
+This will create a space on GitHub where you can store your code.\
+\
+Repository name - should be a unique name among all your projects. \
+Can choose to enter a description.\
+Go private repo, can change later. Going public shows the commit history\
+DOn't need the default three files. Leave unchecked.\
+\
+Create Repository. \
+\
+\
+You then get a screen with all the commands you need to run from the command line (Terminal).\
+\
+As we already have some code, we don't use exactly the GitHub's exact sequence of commands\
+\
+\
+cd to the directory where project is. \
+cd ~/Desktop/UltimatePortfolio \
+ls to check\
+Alt-3 for octothorpe\
+echo "# UltimatePortfolio" > README.md\
+Copies text "#UltimatePortfolio" into README.md and in Markdown files, "#" marks a title\
+\
+Create a Git repo in your local folder. Tells Git to start tracking your work, although initially just locally\
+\
+git init\
+\
+At this point, Git's watching my files looking for changes when you ask. \
+\
+Everything is new at the mo, so get Git to add it all\
+\
+git add .\
+\
+"git add ." meaning "please prepare some changes to go into source control". The . refers to the current directory, so Git adds everything in the current directory and all subdirectories.\
+\
+Next step is to commit these changes to source control - to save them. -m allows a message.\
+ git commit -m "Initial commit."\
+\
+Code is now in a local Git repository. But we want to store our code remotely on GitHub. \
+Create a "main" branch for your code:\
+\
+git branch -M main\
+\
+\
+git remote add origin https://github.com/tomtubbs/GuessTheFlag.git\
+\
+git push -u origin main\
+\
+\
+SAVING NEW CHANGES: \
+git status\
+ to check haven't changed or removed any files by accident.\
+\
+git diff - check all changes look good\
+\
+\
+*****\
+\
+git add . (all or specific files eg git add somefile.swift) can run git add multiple times\
+git commit -m "Some message describing your change"\
+git push\
+\
+******\
+\
+ls\
+\
+echo \cf5 "# Specialist"\cf4  >> README.md\
+git \cf6 init\cf4 \
+ git \cf7 add\cf4  . \cf2 // add all as all new files at the start. add is staging - we haven't added them yet.\cf4 \
+git \cf8 commit\cf4  -m \cf5 "first commit"\cf4 \
+\
+\
+git branch -M \cf7 main\cf4  \cf2 // allow smultiple versions of code running in parallel without conflicting with each other.\cf4 \
+git remote \cf7 add\cf4  \cf7 origin\cf4  https:\cf2 //github.com/tomtubbs/Specialist.git\cf4 \
+\
+ remote \cf7 origin\cf4  already exists  \cf2 //\
+\cf9 https://www.cloudbees.com/blog/remote-origin-already-exists-error\cf4 \
+git \cf7 push\cf4  -\cf7 u\cf4  \cf7 origin\cf4  \cf7 main\cf4 \
+ Issue with priavet email on \cf8 commit\cf4  , see http:\cf2 //github.com/settings/emails settings\cf4 \
+ then\
+ \cf7 add\cf4 , \cf8 commit\cf4 , \cf7 push\cf4  \cf6 for\cf4  \cf6 each\cf4  \cf7 section\cf4 .\cf10 Element\cf4 \
+\
+\
+ If \cf7 small\cf4  change, ask git what \cf7 status\cf4  \cf6 is\cf4 . What's changed\
+ git \cf7 status\cf4 \
+ eg. shows what' modified. Exactly what \cf7 changes\cf4 \
+git diff\
+\
+ git \cf7 add\cf4 \
+git \cf7 add\cf4  \cf7 to\cf4  \cf7 add\cf4  the \cf7 changes\cf4 , eitehr \cf11 all\cf4  with . \cf7 or\cf4  \cf6 for\cf4  specific files\
+then\
+git \cf8 commit\cf4  -m \cf5 "Testing git status and git diff"\cf4 \
+\
+ git \cf7 add\cf4  .\
+git \cf8 commit\cf4  -m \cf5 "Comment"\cf4 \
+git \cf7 push\cf4 \
+}
