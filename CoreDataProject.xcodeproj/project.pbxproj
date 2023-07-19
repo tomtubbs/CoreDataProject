@@ -18,6 +18,7 @@
 		E28FDAC32A688E8D007CEB4A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28FDAC22A688E8D007CEB4A /* DataController.swift */; };
 		E28FDAC62A68981D007CEB4A /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28FDAC42A68981D007CEB4A /* Singer+CoreDataClass.swift */; };
 		E28FDAC72A68981D007CEB4A /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28FDAC52A68981D007CEB4A /* Singer+CoreDataProperties.swift */; };
+		E28FDAC92A6898EA007CEB4A /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28FDAC82A6898EA007CEB4A /* FilteredList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		E28FDAC22A688E8D007CEB4A /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		E28FDAC42A68981D007CEB4A /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataClass.swift"; sourceTree = "<group>"; };
 		E28FDAC52A68981D007CEB4A /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E28FDAC82A6898EA007CEB4A /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				E28FDAB72A68889D007CEB4A /* GitCommands.rtf */,
 				E28FDAC22A688E8D007CEB4A /* DataController.swift */,
 				E28FDAAB2A688885007CEB4A /* ContentView.swift */,
+				E28FDAC82A6898EA007CEB4A /* FilteredList.swift */,
 				E28FDABB2A6888F4007CEB4A /* CoreDataProject.xcdatamodeld */,
 				E28FDAAD2A688888007CEB4A /* Assets.xcassets */,
 				E28FDAAF2A688888007CEB4A /* Preview Content */,
@@ -161,6 +164,7 @@
 			files = (
 				E28FDAC62A68981D007CEB4A /* Singer+CoreDataClass.swift in Sources */,
 				E28FDAAC2A688885007CEB4A /* ContentView.swift in Sources */,
+				E28FDAC92A6898EA007CEB4A /* FilteredList.swift in Sources */,
 				E28FDAC32A688E8D007CEB4A /* DataController.swift in Sources */,
 				E28FDABD2A6888F4007CEB4A /* CoreDataProject.xcdatamodeld in Sources */,
 				E28FDAC02A688B41007CEB4A /* Movie+CoreDataClass.swift in Sources */,
